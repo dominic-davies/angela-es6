@@ -58,11 +58,85 @@
   </div>
 
   <div>
-    <h2>Lecture 93. Variables (Concatenation)</h2>
-    <p></p>
+    <h2>Lecture 93. String Concatenation</h2>
+    <p>A simple challenge.</p>
+    <code> var message = "Hello"; <br>
+      var name = "Dominic"; <br>
+      alert(message + " " + name + ' ' + "enjoy the course!");</code>
+  </div>
 
+  <div>
+    <h2>Lecture 94. String lengths and retrieving the number of characters</h2>
+    <p>Use the length property.</p>
+    <code>
+      var name = "Dominic"; <br>
+      alert(name.length);
+    </code>
+    <h4>Challenge</h4>
+    <p>Expected output. You have written 182 characters, you have -42 characters left.</p>
+    <h4>My very wordy solution</h4>
+    <code>
+      charactersWritten = prompt("Enter Your Message: "); <br>
+      charactersWrittenLength = charactersWritten.length; <br>
+      maxCharacters = 140; <br>
+      charactersRemaining = maxCharacters - charactersWrittenLength; <br>
+      alert("You have written " + charactersWrittenLength + ", " + "you have " + charactersRemaining + " characters
+      left");
+    </code>
+    <h4>Instructors solution</h4>
+    <code>
+      var tweet = prompt("Compose your tweet:"); <br>
+      var tweetCount = tweet.length; <br>
+      alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters
+      remaining");
+    </code>
+    <h4>Also</h4>
+    <code>
+      var tweet = prompt("Compose your tweet:"); <br>
+      <strike> var tweetCount = tweet.length;</strike> <br>
+      alert("You have written " + tweet.length + " characters, you have " + (140 - tweet.length) + " characters
+      remaining");
+    </code>
+    <h4>My reworked solution</h4>
+    <code>
+      tweet = prompt("Compose your tweet:"); <br>
+      alert("You have written " + tweet.length + " characters, " + "you have " + (140 - tweet.length) + " characters
+      left");
+    </code>
   </div>
   <script>
+    // L.94
+    // var name = "Dominic";
+    // alert(name.length);
+    // charactersWritten = prompt("Enter Your Message: ");
+    // charactersWrittenLength = charactersWritten.length;
+    // maxCharacters = 140;
+    // charactersRemaining = maxCharacters - charactersWrittenLength;
+    // alert("You have written " + charactersWrittenLength + ", " + "you have " + charactersRemaining + " characters left");
+
+    // Angela's solution
+
+    // var tweet = prompt("Compose your tweet:");
+
+    // var tweetCount = tweet.length;
+    // alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining");
+
+    // my reworked solution
+
+    // tweet = prompt("Compose your tweet:");
+    // tweetLength = tweet.length;
+    // alert("You have written " + tweetLength + " characters, " + "you have " + (140 - tweetLength) + " characters left");
+    tweet = prompt("Compose your tweet:")
+    alert("You have written " + tweet.length + " characters, " + "you have " + (140 - tweet.length) +
+      " characters left ");
+
+
+    // L.93
+    // alert("Hello " + "World");
+    // var message = "Hello";
+    // var name = "Dominic";
+    // alert(message + " " + name + ' ' + "enjoy the course!");
+
     // L.91
     // prompt("What is your name?");
     // need to save this to memory
