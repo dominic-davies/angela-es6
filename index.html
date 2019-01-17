@@ -58,7 +58,7 @@
   </div>
 
   <div>
-    <h2>Lecture 93. String Concatenation</h2>
+    <h2>Lecture 94. String Concatenation</h2>
     <p>A simple challenge.</p>
     <code> var message = "Hello"; <br>
       var name = "Dominic"; <br>
@@ -66,7 +66,7 @@
   </div>
 
   <div>
-    <h2>Lecture 94. String lengths and retrieving the number of characters</h2>
+    <h2>Lecture 95. String lengths and retrieving the number of characters</h2>
     <p>Use the length property.</p>
     <code>
       var name = "Dominic"; <br>
@@ -104,7 +104,63 @@
       left");
     </code>
   </div>
+
+  <div>
+    <h2>Lecture 96. Slicing and extracting parts of a string</h2>
+    <p>Remove extra characters from previous challenge.</p>
+    <p>nameOfVariable.slice(x,y) x is the starting position, y is the ending position.</p>
+    <p>separate a string into individual characters.</p>
+    <h4>This gives A, position 0, 1 character.</h4>
+    <code>
+      var name = "Angela"; <br>
+      console.log(name.slice(0, 1));
+    </code>
+
+    <h4>This returns minic, the sliced characters are afrom position 2 (m), until position 7(after c (6)).</h4>
+    <code>
+      var name = "Dominic"; <br>
+      console.log(name.slice(2, 7));
+    </code>
+    <h3>Challenge</h3>
+    <code>
+      Challenge <br>
+
+      var tweet = prompt("Enter Tweet:"); <br>
+      var tweetUnder140 = (tweet.slice(0, 140)); <br>
+      alert(tweetUnder140); <br> <br>
+
+      in 2 lines <br>
+      var tweet = prompt("Enter Tweet:"); <br>
+      alert(tweet.slice(0, 140)); <br> <br>
+
+      in 1 line <br>
+
+      alert(prompt("Enter Tweet:").slice(0,140));
+    </code>
+  </div>
   <script>
+    // L.96
+    // var name = "Angela";
+    // name.slice(0,1); 
+
+    // var name = "Dominic";
+    // console.log(name.slice(2, 7));
+
+    //      Challenge
+
+    //      var tweet = prompt("Enter Tweet:");
+    // var tweetUnder140 = (tweet.slice(0, 140));
+    // alert(tweetUnder140);
+
+    // in 2 lines
+    // var tweet = prompt("Enter Tweet:");
+    // alert(tweet.slice(0, 140));
+
+    // in 1 line
+
+    // alert(prompt("Enter Tweet:").slice(0,140));
+
+
     // L.94
     // var name = "Dominic";
     // alert(name.length);
@@ -126,9 +182,9 @@
     // tweet = prompt("Compose your tweet:");
     // tweetLength = tweet.length;
     // alert("You have written " + tweetLength + " characters, " + "you have " + (140 - tweetLength) + " characters left");
-    tweet = prompt("Compose your tweet:")
-    alert("You have written " + tweet.length + " characters, " + "you have " + (140 - tweet.length) +
-      " characters left ");
+    // tweet = prompt("Compose your tweet:")
+    // alert("You have written " + tweet.length + " characters, " + "you have " + (140 - tweet.length) +
+    //   " characters left ");
 
 
     // L.93
